@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{font-family: "Arial",sans-serif;}
+
+ul.tab{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color:#f1f1f1;
+
+}
+/*floats the list of items side by side*/
+ul.tab li {float:left;}
+
+/*styles the links inside the list*/
+ul.tab li a {
+	display: inline-block;
+	color:black;
+	text-align:center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 17px;
+	
+}
+
+ul.tab li a:hover {
+	background-color: #ddd;
+}
+
+ul.tab li a:focus, .active {
+	background-color:#ccc;
+}
+
+
+.tabcontent{
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+
+</style>
+<body>
+
+<h1 font-size:100%> Give Life </h1>
+
+<ul class = "tab">
+<li><a href = "javascript:void(0)" class= "tablinks" onclick="openCity(event,'HOME')">HOME</a></li>
+<li><a href = "javascript:void(0)" class = "tablinks" onclick="openCity(event,'ABOUT US')">ABOUT OUR WORK</a></li>
+<li><a href = "javascript:void(0)" class = "tablinks" onclick="openCity(event,'GIVE')">GIVE</a></li>
+<li><a href = "javascript:void(0)" class = "tablinks" onclick="openCity(event,'NON PROFIT OF THE MONTH')">NON PROFIT OF THE MONTH</a></li>
+ </ul>
+
+<div id = "HOME" class = "tabcontent">
+<h1  >
+                        Give Life
+</h1>
+
+<p>Give Life is a ministry that I've decided to start because I see a lot of hurt and pain in this world. However, with pain there is joy and satisfaction in our Lord Jesus Christ! With this ministry I plan on building a community of people all over the world that do some kind act that "Gives Life" to someone's day or life. Since I was nine years old I have been a part of the ministry my grandma and grandpa founded which is a nursing home ministry where we go to the nursing home for an hour long Church service. The way the members of suburban pavilion nursing home respond to our service is so heart warming, sometimes the gift of time is all you need to Give Life to someones day. Which is why I think this ministry, outreach or whatever you want to call it is so important and can be such an impact to our society.  
+<h2 style= "color:black; font-size:22px;">           There are tons of Bible verses on giving, but this is one of my favorites!</h2>
+<h3 style="color:black; font-size:20px;"> "Do not withhold good from those to whom it is due, when it is in your power to do it." - Proverbs 3:27</h3>
+<img src="giving2.jpg"  style="width:600px;height:300px;">
+<img src="giving.png"  style="width:600px;height:300px;">
+<p>The mission is to help increase the amount of revenue non-profit organizations annually receive. This web page is a resource raise awareness and to encourage others to help those in need around the world. Professional athletes such as Russell Wilson help raise awareness by supporting children and their families who are suffering from major illnesses, sometimes all it takes is a visit to "Give Life" to someone else day. I myself(the right) am not a professional athlete nor a celebrity, but a lot of times people who are suffering in some way whether they're in the hospital or in the nursing home just need prayer and fellowship.</p>
+<iframe width="500" height="500" src="https://www.youtube.com/embed/zW0ASHGSgig" frameborder="0" allowfullscreen></iframe>
+<img src="nhm.jpg"  style="width:500px;height:500px;">
+
+ </div>
+
+
+<div id = "ABOUT US" class = "tabcontent">
+<h3>WORKING TOGETHER TO BRING JOY TO THOSE AROUND US</h3>
+<p> Giving can come in all forms and shapes, gifts, smiles, laugher, flowers and so much more!</p>
+<img src = "Joy.jpg"  style="width:500px;height:500px;">
+
+<img src = "givingsloth.gif"  style="width:500px;height:500px;">
+<p>Welcome</p>
+ </div>
+<div id = "GIVE" class = "tabcontent">
+</div> 
+<div style="font-size:22px;" id = "NON PROFIT OF THE MONTH" class = "tabcontent">
+<p> Each month we highlight a non profit organization for their great impact on society! 
+This month we will be highlighting the Non Profit: </p>
+<p style=" font-size:30px; color:orange;"> Feeding America</p>
+<p>Feeding America is a nonprofit organization that has over 200 food banks, and feeds over 46 million people through the help of food pantries, soup kitchens, shelters, and more! </p>
+<img src = "FA.png"  style="width:600px;height:500px;">
+<img src = "FeedingAmerica.jpg"  style="width:630px;height:600px;">
+<p>
+Here is a link to Feeding America's website to learn more!
+<FORM STYLE="color:blue" METHOD = "LINK" ACTION="https://secure.feedingamerica.org/site/Donation2?24560.donation=form1&df_id=24560&mfc_pref=T&s_src=Y16YP2B1X&s_subsrc=c&s_keyword=feeding%20america&gclid=CjwKEAiAkajDBRCRq8Czmdj-yFgSJADikZggrRy0629CKNIpJ2NKQt4Dplw9j70Dj5Uty6Z6XxSv5RoC6e3w_wcB">
+<INPUT TYPE = "submit" VALUE = "GIVE LIFE">
+</FORM>
+
+</p>
+</p>
+
+</div> 
+
+<script>
+function openCity(evt, cityName){
+	var j, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for(j = 0; j < tabcontent.length; j++)
+	{
+		tabcontent[j].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablinks");
+	for(j = 0; j< tablinks.length; j++)
+	{
+		tablinks[j].className = tablinks[j].className.replace(" active", ""); 
+	}
+	document.getElementById(cityName).style.display = "block";
+	evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
+
